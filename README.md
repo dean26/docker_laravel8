@@ -1,5 +1,5 @@
 # docker_laravel8
-'''console
+```console
 docker-compose build
 docker-compose up -d
-'''
+```
