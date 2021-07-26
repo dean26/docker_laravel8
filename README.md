@@ -9,3 +9,8 @@ phpmyadmin<br/>
 docker-compose build
 docker-compose up -d
 ```
+
+```console
+max depth exceeded error:
+docker rmi -f $(docker images -a -q)
+```
