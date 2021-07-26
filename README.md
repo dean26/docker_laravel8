@@ -10,7 +10,8 @@ docker-compose build
 docker-compose up -d
 ```
 
+max depth exceeded error:<br/>
 ```console
-max depth exceeded error:
 docker rmi -f $(docker images -a -q)
+docker image prune -a
 ```
