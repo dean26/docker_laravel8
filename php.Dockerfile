@@ -10,5 +10,6 @@ php8-openssl php8-bcmath php8-ctype php8-fileinfo php8-pdo php8-tokenizer php8-x
 
 RUN docker-php-ext-install zip
 RUN docker-php-ext-install mysqli
+RUN docker-php-ext-install pdo_mysql
 
 WORKDIR /app
