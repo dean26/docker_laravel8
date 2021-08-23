@@ -6,7 +6,7 @@ RUN apt-get update && apt-get install -y \
         libmcrypt-dev \
         libpng-dev
 		
-RUN apt-get install libmagickwand-dev --no-install-recommends \
+RUN apt-get install -y libmagickwand-dev --no-install-recommends \
     && pecl install imagick \
 	&& docker-php-ext-enable imagick
 	
