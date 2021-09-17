@@ -19,7 +19,7 @@ services:
             - app-network
     fpm:
         image:
-            php:8-fpm
+            php:8.0.0-fpm-alpine
         build:
             context: .
             dockerfile: fpm.Dockerfile              
