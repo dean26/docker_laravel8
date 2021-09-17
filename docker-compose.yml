@@ -3,7 +3,7 @@ version: '3'
 services:   
     web:
         container_name:
-            web_wiwatowski
+            web
         image:
             nginx:latest
         build:
