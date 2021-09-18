@@ -28,17 +28,6 @@ services:
         ports:
             - "9000:9000" 
         networks:
-            - app-network 
-    php:
-        image:
-            php:8.0.8-cli-alpine3.13
-        build:
-            context: .
-            dockerfile: php.Dockerfile   
-        tty: true                        
-        volumes:
-            - ./app:/app  
-        networks:
             - app-network  
     db:
         image: "mariadb:latest"
